@@ -20,6 +20,10 @@ body {
   font-size: 1.4vw;
 }
 
+/*=========================================================
+                       Home Page
+===========================================================*/
+
 /* ///////////    Main   ///////////// */
 .main {
   display: flex;
@@ -116,11 +120,11 @@ hr {
 }
 .contact-form {
   position: relative;
-  width: 25%;
-  margin: 5% 0 5% 50%;
+  width: 40%;
+  height: auto;
+  margin: 0 0 0 50%;
   padding: 5%;
   background-color: rgba(138, 138, 138, 0.4);
-  border-radius: 8px;
 }
 .form-input {
   display: flex;
@@ -153,4 +157,94 @@ hr {
   padding: 3% 5%;
   border-radius: 4px;
   color: white;
+}
+
+/*=========================================================
+                       Sign In Page
+===========================================================*/
+
+.signin-body {
+  background-color: rgb(29, 75, 85);
+}
+.signin-container {
+  background-image: url(images/pexels-mateusz-dach-450035.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: auto;
+  margin: 5% auto;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.form-container {
+  background-color: rgba(36, 36, 36, 0.5);
+  width: 60%;
+  height: auto;
+  padding: 5%;
+}
+.signin-form {
+  margin: 5% 5%;
+  width: 50%;
+}
+.signin-form p {
+  color: white;
+}
+.signin-input {
+  display: flex;
+  flex-direction: column;
+}
+.signin {
+  margin: 8% 0;
+  border: none;
+  border-bottom: 2px solid rgb(60, 140, 250);
+  background: none;
+}
+.signin:focus {
+  outline: none;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+.signin-text p {
+  font-size: 3vw;
+  text-align: center;
+  margin: 5% 0;
+}
+.signin-button {
+  text-align: center;
+  margin: 10% 0;
+}
+.signin-button a {
+  text-decoration: none;
+  background-color: rgb(60, 140, 250);
+  padding: 3% 5%;
+  border-radius: 4px;
+  color: white;
+}
+.qoute-container {
+  background-color: rgb(60, 140, 250);
+  width: 40%;
+}
+.forgot-check {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+.signin-form a {
+  color: white;
+}
+label {
+  color: white;
+}
+.createaccnt p {
+  text-align: center;
+}
+.qoute-container p {
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+  padding: 2%;
+  margin-top: 30%;
 }
