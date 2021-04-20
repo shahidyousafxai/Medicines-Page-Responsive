@@ -1,12 +1,13 @@
-/* ///////////    Body   ///////////// */
+/* ////////////////////////////////////    Body   //////////////////////////////// */
 body {
+  font-family: "Inter", sans-serif;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* ///////////    Navbar   ///////////// */
+/* ///////////////////////////////////    Navbar   /////////////////////////////// */
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -24,7 +25,7 @@ body {
                        Home Page
 ===========================================================*/
 
-/* ///////////    Main   ///////////// */
+/* /////////////////////////////////    Main   /////////////////////////////////// */
 .main {
   display: flex;
   justify-content: space-around;
@@ -54,22 +55,25 @@ body {
   margin: 1%;
   padding: 1.5%;
   border-radius: 4px;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   transition-property: margin-bottom, box-shadow;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
 .main-link a:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 50px 0 rgba(0, 0, 0, 0.1);
 }
 .main-link {
   margin-left: 5%;
 }
 
-/* ///////////    GuideLines   ///////////// */
+/* /////////////////////////////////    GuideLines   //////////////////////////////// */
 .guide-header {
   font-size: 3vw;
   text-align: center;
+}
+.guide-header p {
+  margin-bottom: 0;
 }
 .guide {
   width: 80%;
@@ -77,6 +81,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4%;
   margin: auto;
+  margin-bottom: 20px;
   text-align: center;
 }
 .guide p {
@@ -84,6 +89,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(60, 140, 250);
+  color: white;
   padding: 5%;
   font-size: 1.5vw;
   border-radius: 4px;
@@ -93,10 +99,6 @@ body {
 }
 .guide p:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-}
-.guide a {
-  text-decoration: none;
-  color: white;
 }
 hr {
   border: 0;
@@ -109,7 +111,7 @@ hr {
   );
 }
 
-/* ///////////    Contact Us   ///////////// */
+/* ////////////////////////////////    Contact Us   ////////////////////////////////////// */
 .contact-us {
   background-image: url(images/pexels-negative-space-33999.jpg);
   background-repeat: no-repeat;
@@ -120,9 +122,9 @@ hr {
 }
 .contact-form {
   position: relative;
-  width: 40%;
+  width: 48%;
   height: auto;
-  margin: 0 0 0 50%;
+  margin: 0 0 0 42%;
   padding: 5%;
   background-color: rgba(138, 138, 138, 0.4);
 }
@@ -139,8 +141,8 @@ hr {
 .input:focus {
   outline: none;
 }
-::placeholder {
-  color: rgb(82, 80, 80);
+.input::placeholder {
+  color: black;
   opacity: 1;
 }
 .form-text p {
@@ -158,13 +160,14 @@ hr {
   border-radius: 4px;
   color: white;
 }
+/* /////////////////////////////    Pop Up   /////////////////////////////////// */
 
 /*=========================================================
                        Sign In Page
 ===========================================================*/
 
 .signin-body {
-  background-color: rgb(29, 75, 85);
+  background-color: rgb(39, 101, 116);
 }
 .signin-container {
   background-image: url(images/pexels-mateusz-dach-450035.jpg);
@@ -174,14 +177,14 @@ hr {
   justify-content: space-between;
   width: 85%;
   height: auto;
-  margin: 5% auto;
+  margin: 2% auto;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 .form-container {
   background-color: rgba(36, 36, 36, 0.5);
   width: 60%;
   height: auto;
-  padding: 5%;
+  padding: 8% 5%;
 }
 .signin-form {
   margin: 5% 5%;
@@ -246,5 +249,80 @@ label {
   font-size: 3vw;
   text-align: center;
   padding: 2%;
-  margin-top: 30%;
+  margin-top: 40%;
+}
+/*=========================================================
+                       log In Page
+===========================================================*/
+
+.login-container {
+  background-image: url(images/pexels-mateusz-dach-450035.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: auto;
+  margin: 2% auto;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.form-login {
+  background-color: rgba(36, 36, 36, 0.5);
+  width: 60%;
+  height: auto;
+  padding: 3% 5%;
+}
+.login-form {
+  margin: 3% 5%;
+  width: 60%;
+}
+.login-form p {
+  color: white;
+}
+.login-input {
+  display: flex;
+  flex-direction: column;
+}
+.login {
+  margin: 5% 0;
+  border: none;
+  border-bottom: 2px solid rgb(60, 140, 250);
+  background: none;
+}
+.login:focus {
+  outline: none;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+.login-text p {
+  font-size: 3vw;
+  text-align: center;
+  margin: 5% 0;
+}
+.login-button {
+  text-align: center;
+  margin: 10% 0;
+}
+.login-button a {
+  text-decoration: none;
+  background-color: rgb(60, 140, 250);
+  padding: 3% 5%;
+  border-radius: 4px;
+  color: white;
+}
+.login-form a {
+  color: white;
+}
+.qoute-container2 p {
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+  padding: 2%;
+  margin-top: 40%;
+}
+.qoute-container2 {
+  background-color: rgb(60, 140, 250);
+  width: 40%;
 }

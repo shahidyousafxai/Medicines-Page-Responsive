@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>Online Medicine Donation</title>
 </head>
 <body>
 
 
-    <!--///////////    Navbar   ///////////-->
+    <!--////////////////////////////    Navbar   ///////////////////////-->
     <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="signin.html">Sign In</a>
@@ -18,7 +22,7 @@
     </nav>
 
 
-    <!--///////////    Main   ///////////-->
+    <!--//////////////////////////    Main   ///////////////////////////-->
     <div class="main">
         <div class="main-text">
         <p>Helping people by charity is the most human thing we can do.</p>
@@ -32,16 +36,16 @@
         </div>
     </div>
 
-    <!--///////////    GuideLines   ///////////-->
+    <!--/////////////////////////    GuideLines   //////////////////////-->
     <div class="guide-header">
         <p>Guidelines for medicine donations:</p>
     </div>
     <hr/>
     <div>
         <div class="guide">
-            <p> <a href="">Selection of medicines.</a></p>
-            <p><a href="">Presentation, packaging and labelling.</a></p>
-            <p><a href="">Information and management.</a></p>
+            <p id="selection">Selection of medicines.</p>
+            <p id="presentation">Presentation, packaging and labelling.</p>
+            <p id="information">Information and management.</p>
         </div>
     </div>
     <div class="guide-header">
@@ -49,13 +53,13 @@
     </div>
     <hr/>
     <div class="guide">
-        <p><a href="">Collaboration, roles and responsibilities.</a></p>
-        <p><a href="">Guidance to donors.</a></p>
-        <p><a href="">Guidance to recipients.</a></p>
+        <p id="collaboration">Collaboration, roles and responsibilities.</p>
+        <p id="donor">Guidance to donors.</p>
+        <p id="recipient">Guidance to recipients.</p>
     </div>
 
 
-    <!--///////////    Contact Us   ///////////-->
+    <!--/////////////////////    Contact Us   //////////////////////////-->
     <section class="contact-us">
     <form class="contact-form">
         <div class="form-text">
@@ -71,5 +75,469 @@
         </div>
     </form>
     </section>
+
+    <!--///////////////////////////    Pop Up 1  ///////////////////////-->
+    <div id="mymodal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close c1">&times;</span>
+                <h2>Selection of medicines</h2>
+            </div>
+            <div class="modal-body">
+                <p class="definition"><b>1) All medicine donations should be based on an expressed need, should be relevant
+                to the disease pattern in the recipient country, and quantities should be agreed
+                between donor and recipient.</b></p>
+
+                <h4 class="pop-head">Justification and explanation</h4>
+
+                <p>The prime responsibility for specifying needs is with the recipient. This implies that
+                there should be a clear agreement on which the donation of medicines should be
+                based. The recipient should also be responsible for determining the quantities of
+                products to be donated since appropriate quantification of needs is an important
+                component of quality donations. Unsolicited, unwanted or unneeded donations
+                should not be made, as they may lead to over‐stocking and expiry of donated
+                products. There should be cooperation between the donor and the recipient from the
+                initiation of the donation, through its planning, and until the final shipment.</p>
+                
+                <h4 class="pop-head">Possible exceptions</h4>
+
+                <p>In acute emergencies, the need for prior consent by the recipient may be waived,
+                provided that the medicines are among those on the WHO model lists of essential
+                medicines1,2 or are included in the United Nations list of emergency relief items
+                recommended for use in acute emergencies.</p>
+
+                <p class="definition"><b>2) All donated medicines or their generic equivalents should be approved for use in
+                the recipient country and should appear on the national list of essential medicines
+                or equivalent or in the national standard treatment guidelines, if the NEML is not
+                updated. Or, if a national list is not available, it should appear on the WHO model
+                lists of essential medicines, unless specifically requested otherwise and provided
+                with a justification by the recipient.</b></p>
+
+                <h4 class="pop-head">Justification and explanation</h4>
+
+                <p>Medicine donations must comply with national medicine policies, essential medicines
+                programmes, and national treatment protocols.</p>
+
+                <h4 class="pop-head">Possible exceptions</h4>
+
+                <p>An exception can be made for medicines needed in sudden outbreaks of uncommon
+                or newly emerging diseases. Not all medicines appropriate for those conditions are
+                also approved for use in the recipient country in question. In such cases, donors
+                should duly inform recipients of the regulatory status of products to be donated, and
+                should obtain agreement.</p>
+
+                <p class="definition"><b>3) The presentation, strength, and formulation of donated medicines should, as far
+                as possible, be similar to those of medicines commonly used in the recipient
+                country.</b></p>
+
+                <h4 class="pop-head">Justification and explanation</h4>
+
+               <p>Staff at the different levels of health care in recipient countries have often been
+                trained to use certain formulations and dosage schedules and should preferably not
+                be confronted with other treatment practices. Moreover, dosage recalculations may
+                introduce medication errors.</p>
+
+                <h4 class="pop-head">Quality assurance and shelf-life</h4>
+
+                <p class="definition"><b>4) All donated medicines should be obtained from a quality-ensured source and
+                should comply with quality standards in both donor and recipient countries. The
+                WHO Certification Scheme on the Quality of Pharmaceutical Products Moving in
+                International Commerce4 should be used.</b></p>
+
+                <h4 class="pop-head">Justification and explanation</h4>
+
+                <p>Double standards should be prevented: medicines of unacceptable quality in the
+                donor country should not be donated to other countries. Donated medicines should
+                be authorized for sale in the country of origin, and should be manufactured in
+                accordance with international standards of good manufacturing practices (GMP).</p>
+
+                <h4 class="pop-head">Possible exceptions</h4>
+
+                <p>In acute emergencies, where pre‐stock or the emergency health kit are not in place,
+                the use of the WHO Certification Scheme may not be practical. However, if it is not
+                used, a solid justification should be given by the donor. When donors provide funds
+                to purchase medicines from local producers, those which comply with national
+                standards should not be excluded solely on the grounds that they do not meet the
+                quality standards of the donor country. Strict criteria should be adhered to. See
+                UNHCR’s drug management manual.</p>
+
+                <p class="definition"><b>5) No medicines should be donated that have been issued to patients and then
+                returned to a pharmacy or elsewhere, or that have been given to health
+                professionals as free samples.</b></p>
+
+                <h4 class="pop-head">Justification and explanation</h4>
+
+                <p>Patients return unused medicines to a pharmacy to ensure their safe disposal. In most
+                countries it is not permitted to issue returned medicines to other patients as the
+                quality cannot be guaranteed. In addition, returned medicines are difficult to manage
+                because of broken packages and the small quantities involved. Free samples given to
+                health workers should not be further distributed as donations to other health
+                systems.</p>
+
+                <p class="definition"><b>6) After arrival in the recipient country all donated medicines should have a
+                        remaining shelf-life of at least one year. Large quantities of donated medicines
+                        become a logistical challenge, even with a long shelf-life. Therefore, based on the
+                        national consumption and available quantities in stock or in the supply chain
+                        pipeline, all donated quantities should match the needs to be consumed before
+                        they are expired.</b></p>
+                
+                <h4 class="pop-head">Justification and explanation</h4>
+                
+                <p>In many recipient countries, especially in emergency situations, logistical problems
+                    exist. Regular medicine distribution systems often have limited possibilities for
+                    immediate distribution, and distribution through the different storage levels (e.g.
+                    central store, provincial store, district hospital) may take a number of months.
+                    Donation of medicines just before their expiry should be avoided as in most cases
+                    they will reach patients after expiry. The argument that short‐dated products can be
+                    donated in the case of acute emergencies, because of their immediate use, is incorrect.
+                    In emergency situations the systems for receipt, storage and distribution of medicines
+                    are often disrupted and overloaded, and donated medicines tend to accumulate.</p>
+                
+                <h4 class="pop-head">Possible exceptions</h4>
+                
+                <p>An exception may be made for direct donations to specific health facilities, provided
+                    that (i) professional staff at the recipient institution are aware of the limited shelf‐life
+                    and (ii) the quantity and remaining shelf‐life allow for use prior to expiry. A second
+                    exception should be made for medicines with a total shelf‐life of less than two years,
+                    in which case at least one third of the shelf‐life should remain, with a minimum of six
+                    months. The national donation policy may specify the minimum acceptable
+                    remaining shelf‐life for donated medicines.</p>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+
+
+
+<!--//////////////////////////    Pop Up 2  ////////////////////////////-->
+    <div id="mymodal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close c2">&times;</span>
+                <h2>Presentation, packaging and labelling</h2>
+            </div>
+            <div class="modal-body">
+                <p class="definition"><b>1) All medicines should be labelled in a language that is easily understood by health
+                professionals in the recipient country. The label on each container should contain
+                at least the International Nonproprietary Name (INN) or generic name, batch
+                number, dosage form, strength, name of manufacturer, country of manufacture,
+                quantity in the container, storage conditions and expiry date.</b></p>
+
+                <h4 class="pop-head">Justification and explanation</h4>
+
+                <p>Health systems generally operate on the basis of generic names. All donated
+                medicines, including those under a brand name, should therefore be labelled also
+                with their INN or generic name. Receiving medicines under different and often
+                unknown brand names or without the INN is confusing and can be dangerous for
+                patients. In the case of injections, the route of administration should be indicated.</p>
+
+                <p class="definition"><b>2) Donated medicines should be presented in pack sizes that are suitable for the
+                recipient and appropriate to the setting in which they will be distributed or
+                dispensed.</b></p>
+
+                <h4 class="pop-head">Justification and explanation</h4>
+
+                <p>Large quantity packs tend to be more appropriate for public sector supply systems in
+                most recipient countries. They are less bulky and allow for quick and effective
+                distribution and dispensing to patients. When possible, liquid formulations (syrups
+                and mixtures) should be avoided because of their more demanding logistical needs.
+                Where relevant, medicines for use in children should be listed in the WHO Model
+                List of Essential Medicines for Children.</p>
+
+                <p class="definition"><b>3) All medicine donations should be packed in accordance with international
+                shipping requirements and should be accompanied by a detailed packing list that
+                specifies the contents. The weight per carton should preferably not exceed 30
+                kilograms. Shipments of medicines should not be mixed with other supplies,
+                unless they are shipped as kits with predetermined contents.</b></p>
+
+                <h4 class="pop-head">Justification and explanation</h4>
+                
+                <p>Easy administration, storage and distribution of donations is important, as the
+                identification and management of items in unmarked boxes with mixed medicines
+                and/or supplies is time‐consuming and labour‐intensive. The maximum weight of 30
+                kilograms ensures that each carton can be handled without special equipment.</p>
+
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+
+
+<!--//////////////////////////    Pop Up 3  ////////////////////////////-->
+    <div id="mymodal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close c3">&times;</span>
+                <h2>Information and management</h2>
+            </div>
+            <div class="modal-body">
+                <p class="definition"><b>1) Medicine donations should be jointly planned, and collaboration between donors
+                and recipients should begin early. Medicines should not be sent without prior
+                consent of the recipient.</b></p>
+                
+                <h4 class="pop-head">Justification and explanation</h4>
+
+                <p>Adequate coordination is needed between health “clusters” of the international
+                response system in order to avoid gaps in assistance and duplication of efforts during
+                emergencies. Detailed advance information on medicine donations is essential to
+                allow for planning of receipt and coordination of the donations with other sources of
+                supply. Information provision is part of the donor’s responsibility. Information
+                should be made available well in advance in order to allow for smooth customs
+                clearance and further distribution of products to end‐users. Pharmacists should be
+                involved, either directly or by advising others, in the arrangements for donations of
+                medicines.</p>
+
+                <p class="definition"><b>2) In the recipient country the declared value of a medicine donation should be
+                based on the wholesale price of its generic equivalent in the recipient country, or,
+                if such information is not available, on the wholesale world-market price for its
+                generic equivalent.</b></p>
+
+                <h4 class="pop-head">Justification and explanation</h4>
+
+                <p>This provision is needed solely to prevent medicine donations from being valued in
+                the recipient country according to the retail price of the product in the donor country
+                – which can lead to elevated overhead costs for import tax, port clearance and
+                handling in the recipient country. It may also result in a corresponding decrease in
+                the public sector medicine budget in the recipient country.</p>
+
+                <h4 class="pop-head">Possible exception</h4>
+
+                <p>In the case of patented medicines (for which there is no generic equivalent) the
+                wholesale price of the nearest therapeutic equivalent could be taken as a reference.</p>
+                   
+                <p class="definition"><b>3) Costs of international and local transport, warehousing, port clearance and
+                (customs) storage, handling and disposal or reverse logistics of expired donated
+                products should be paid for by the donor agency, unless specifically agreed
+                otherwise with the recipient in advance.</b></p>
+
+                <h4 class="pop-head">Justification and explanation</h4>
+
+                <p>This section aims to help both donors and recipients to optimize the benefits of medicine
+                donations. Starting with a discussion on shared responsibilities, Section 4.2 provides specific
+                guidance for donors of medicines, including suggestions on other ways donors may help.
+                Section 4.3 provides specific guidance for recipients, including practical information on how
+                to implement a medicine donation policy.</p>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+
+
+<!--//////////////////////////    Pop Up 4  ////////////////////////////-->
+    <div id="mymodal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close c4">&times;</span>
+                <h2>Guidance to donors and recipients</h2>
+            </div>
+            <div class="modal-body">
+                
+                <p>When a donation of medicines is being considered, careful planning is very important,
+                independent of whether it concerns a long‐term donation of a single medicine for a defined
+                disease condition or an emergency donation of a large variety of medicines for general
+                health‐care delivery. Coordination and harmonization between the donor and the recipient is
+                essential.</p>
+
+                <p>Utilization of the communication networks and mechanisms already in
+                place is very important, as is sharing of information on needs and responses. To optimize
+                collaboration, a coordinating mechanism for medicine donations is recommended.</p>
+                
+                <p>Roles and responsibilities in all phases of the donation should be established before the
+                donated medicines arrive in the recipient country. Responsibilities for transport, customs
+                clearance, reception, storage and distribution, administration, monitoring and evaluation
+                and – where warranted – disposal of donated medicines should be agreed in writing and
+                signed by the donors and the recipient. Donors and recipients should be able to demonstrate
+                that each party has the right capacity to carry out these tasks effectively. Where capacity is
+                weak, efforts should be made to increase capacity before a donation is shipped.</p>
+
+                <p>Roles and responsibilities in all phases of the donation should be established before the
+                donated medicines arrive in the recipient country. Responsibilities for transport, customs
+                clearance, reception, storage and distribution, administration, monitoring and evaluation
+                and – where warranted – disposal of donated medicines should be agreed in writing and
+                signed by the donors and the recipient. Donors and recipients should be able to demonstrate
+                that each party has the right capacity to carry out these tasks effectively. Where capacity is
+                weak, efforts should be made to increase capacity before a donation is shipped.</p>
+
+                <h4 class="pop-head">Monitoring and evaluation</h4>
+                
+                <p>Evaluation of the appropriateness of medicine donations is an absolute necessity that
+                determines the effectiveness, efficiency and adequacy of current and future donations.
+                Monitoring and evaluation data may help to prevent the continuation or repetition of
+                inefficient or harmful donations, modify inappropriate donation programmes, adjust
+                forecasting and improve management. Evaluations should include assessments of the
+                administrative process used by the donor agency, the adequacy of selection and forecasting,
+                appropriateness of the medicines, timeliness of delivery and changes in treatment guidelines.
+                Health cluster partners should collectively monitor the implementation of the overall health crisis
+                response strategy and should ensure that the overall health cluster/sector response is evaluated.</p>
+
+                <h4 class="pop-head">Phasing out</h4>
+
+                <p>Long‐term donations may include medicines for lifelong use. Unplanned termination of
+                these treatments may have serious effects so a carefully planned phase‐out is necessary. In
+                most cases this would be a plan of how government funding would take over procurement
+                and management of these medicines, including realistic estimates of the procurement costs
+                involved and development of a scenario on how to budget for those costs.</p>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+
+
+
+<!--//////////////////////////    Pop Up 5  ////////////////////////////-->
+    <div id="mymodal5" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close c5">&times;</span>
+                <h2>Guidance to donors</h2>
+            </div>
+            <div class="modal-body">
+                <p>In addition to shared responsibilities for both donors and recipients, donors should be aware
+                of a number of specific issues within their influence.</p>
+
+                <h4 class="pop-head">Needs of the recipient should guide the donation.</h4>
+
+                <p>In the past, medicines have been donated in wrong selections and quantities, leading to
+                situations in which stocks could not possibly be used within their remaining shelf‐life and
+                therefore required costly and inconvenient destruction procedures. Donations should be
+                planned on the basis of the needs of the recipient country. Competition between donors is
+                unhelpful, and attempts to satisfy the most visible needs of the recipient may not be the best
+                help that a country needs. The quality and appropriateness of the donation is more
+                important than its size or monetary value. Despite tragic images shown in the media, it is
+                necessary to work with general assessments of the needs, to wait for the country’s requests
+                for aid, to maintain contact with organizations in the field, and to rely on relevant and
+                adequate information before planning a medicine donation. On some occasions donations
+                have been earmarked by the donor for specific activities or programmes. Whereas
+                earmarking is understandable from the donor’s point of view, recipients should be allowed
+                to apply flexible criteria when establishing priorities and meeting the changing needs of the
+                population.</p>
+
+                <h4 class="pop-head">Administrative arrangements should not be ignored</h4>
+
+                <p>Donors should respect the laws, regulations and administrative procedures of the recipient
+                country in all instances. Donated medicines should be treated as if they were procured. They
+                should be included in the National Essential Medicines List (NEML). Shipments should be
+                accompanied by documents to prove compliance with quality standards, including the INN
+                or generic name, batch number, dosage form, strength, name and country of the
+                manufacturer, quantities in the container, storage conditions and expiry dates. This enables
+                the recipient to trace back the product in case of suspicion about the quality.</p>
+
+                <h4 class="pop-head">The public in donor countries should be informed</h4>
+                
+                <p>Populations in donor countries are not always aware of the possible problems of medicine
+                donations. Guidelines on the donation practices of the donor country should be in the public
+                domain. It is important for governments in donor countries to create public awareness of
+                “good donation practice”. The best moment for this is probably when the public appeal is
+                announced in the media. In some cases an important message may be that donations of
+                goods other than medicines, or even cash resources, may have preference.</p>
+                
+                <h4 class="pop-head">The recipient must have adequate capacity to handle the donation</h4>
+
+                <p>Donated medicines should be entered into an inventory system, distributed through existing
+                distribution channels and be subject to quality assurance procedures. Donors should ensure
+                that the recipient’s capacity to manage the donation is sufficient and that logistical disasters
+                are prevented. This includes the capacity to store (including a functional cold chain) and
+                distribute, and functioning administrative systems. Donation planning should not start
+                before a responsible party</p>
+
+                <h4 class="pop-head">Remaining shelf-life of donated products should be discussed</h4>
+
+                <p>Donations of medicines with short remaining shelf‐life have caused trouble for recipients for
+                many years. Donors and intermediaries should prevent such poor practices. Interaction with
+                recipients is of key importance in determining the acceptability of the remaining shelf‐life of
+                products being considered for donation. Global experience indicates that well‐managed
+                donor organizations and private sector suppliers are able to avoid donating products with
+                too little remaining shelf‐life.</p>
+
+                <h4 class="pop-head">Management of expired products must be agreed in advance</h4>
+
+                <p>Appropriate disposal or reverse logistics of expired products must be agreed in advance. In
+                principle the donor should accept responsibility for the destruction or withdrawal of
+                donated medicines when necessary. Where national laws or guidance are insufficient,
+                WHO’s Guidelines for safe disposal of unwanted pharmaceuticals in and after emergencies should be
+                followed for destruction of expired medicines. Donors should ensure that a system is in
+                place for collecting and processing complaints about donated products.</p>
+
+    
+    
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+
+
+
+<!--//////////////////////////    Pop Up 6  ////////////////////////////-->
+    <div id="mymodal6" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close c6">&times;</span>
+                <h2>Guidance to recipients</h2>
+            </div>
+            <div class="modal-body">
+                <p>In addition to shared responsibilities for donors and recipients and specific guidance to
+                donors, recipients should be aware of a number of specific issues within their influence.
+                These include defining needs and quantities, as well as planning and coordinating reception,
+                storage and distribution. Recipient countries should have defined procedures for valuation,
+                for entering donations in their budget records, and for the disposal of inappropriate
+                donations.</p>
+                
+                <h4 class="pop-head">Define national guidelines for medicine donations</h4>
+
+                <p>To be prepared for a situation in which donations of medicine are useful or needed,
+                countries should formulate their own national donation policy and guidelines for medicine
+                donations. National guidelines should preferably be formulated on the basis of international
+                guidelines. In the national policy and accompanying guidelines, recipients should explain
+                what kind of assistance – including medicine donations – they need, what minimum
+                requirements medicine donations should meet, and what is not welcome. The national policy
+                and guidelines should be officially presented and explained to the donor community and
+                should be publicly accessible.</p> 
+
+                <h4 class="pop-head">Needs for donated medicines should be well specified</h4>
+
+                <p>The recipient is responsible for specifying the needs when a medicine donation is being
+                considered. Recipients should carefully and precisely prepare requests, indicate the required
+                quantities and prioritize items. In addition, it is recommended to specify the appropriate
+                language of use on products and special medications for children. To avoid duplication,
+                recipients should provide potential donors with information on donations that are
+                anticipated or are already in progress.</p>
+
+                <h4 class="pop-head">Minimum remaining shelf-life must be defined by the recipient</h4>
+
+                <p>Recipients should be clear as to the minimum remaining shelf‐life that is appropriate to the
+                national policy on medicine donations. To avoid unnecessary impounding and disposal of
+                valuable donations, recipient governments should consider possible exceptions to their
+                general rules on remaining shelf‐life.</p>
+
+                <h4 class="pop-head">Rapid customs clearance of donated medicines is important</h4>
+
+                <p>Rapid customs clearance is required for all donated medicines. Customs and health ministry
+                officials managing medicine donations have the responsibility to allow entry of useful
+                donations and to reject unsuitable donations. The criteria for acceptance and rejection of
+                donations should be published in the national donation guidelines and should be
+                communicated to donors.</p>
+
+                <h4 class="pop-head">Incoming donations must be registered</h4>
+
+                <p>Data on goods entering the country, who donated them and where they will go, should be
+                registered from the start of any donation effort. Even in emergency situations, when aid
+                arrives quickly and is sometimes uncoordinated, a central registry of all donations continues
+                to be important. Such registries facilitate the management and organization of donations and
+                promote transparency and responsibility. Registries should be developed on the basis of the
+                national donation policy. Where possible, electronic systems should be implemented to
+                simplify registration.</p>
+    
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
