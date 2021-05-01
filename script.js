@@ -11,11 +11,11 @@ btn1.onclick = function() {
 span.onclick = function() {
   modal1.style.display = "none";
 }
-window.onclick = function(event) {
+window.addEventListener('click', function(event) {
   if (event.target == modal1) {
     modal1.style.display = "none";
   }
-}
+});
 
 /*=========================================
                 Modal 2
@@ -30,6 +30,12 @@ btn2.onclick = function() {
 span.onclick = function() {
   modal2.style.display = "none";
 }
+window.addEventListener('click', function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+});
+
 
 /*=========================================
                 Modal 3
@@ -44,7 +50,11 @@ btn3.onclick = function() {
 span.onclick = function() {
   modal3.style.display = "none";
 }
-
+window.addEventListener('click', function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+});
 
 /*=========================================
                 Modal 4
@@ -59,7 +69,11 @@ btn4.onclick = function() {
 span.onclick = function() {
   modal4.style.display = "none";
 }
-
+window.addEventListener('click', function(event) {
+  if (event.target == modal4) {
+    modal4.style.display = "none";
+  }
+});
 
 /*=========================================
                 Modal 5
@@ -74,6 +88,11 @@ btn5.onclick = function() {
 span.onclick = function() {
   modal5.style.display = "none";
 }
+window.addEventListener('click', function(event) {
+  if (event.target == modal5) {
+    modal5.style.display = "none";
+  }
+});
 
 /*=========================================
                 Modal 6
@@ -88,3 +107,8 @@ btn6.onclick = function() {
 span.onclick = function() {
   modal6.style.display = "none";
 }
+window.addEventListener('click', function(event) {
+  if (event.target == modal6) {
+    modal6.style.display = "none";
+  }
+});
